@@ -1,6 +1,6 @@
-﻿@page "/detail/{Id}"
+﻿@page "/detail/{Keyword}"
 
-<h3>Scientists to Study Fish after Fukushima Water Release</h3>
+<h3>Scientists to Study Fish after Fukushima Water Release-@Keyword</h3>
 <audio controls>
     <source src="https://longya-purchase-1252163579.cos.ap-beijing.myqcloud.com/supplierfile/CDF2A1226F32869EC26AAF406BAA8101/Scientists%20to%20Study%20Fish%20after%20Fukushima%20Water%20Release.mp3" type="audio/mpeg">
 </audio>
@@ -11,7 +11,7 @@
 </div>
 @code {
     [Parameter]
-    public int Id { set; get; }
+    public string Keyword { get; set; } = null!;
     string path = @"By Hai Do
 19 October 2023
 A team of international scientists collected fish samples from an area near Japan's Fukushima nuclear plant Thursday. They are examining the effects of the recent release of treated radioactive water from the plant into the sea.
