@@ -7,6 +7,7 @@
         <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
         <OutputType>Exe</OutputType>
         <RootNamespace>voa_player</RootNamespace>
+		<AndroidPackageFormat>apk</AndroidPackageFormat>
         <UseMaui>true</UseMaui>
         <SingleProject>true</SingleProject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -50,6 +51,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Masa.Blazor" Version="1.1.1" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
     </ItemGroup>
 

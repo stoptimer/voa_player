@@ -23,7 +23,7 @@ namespace voa_player
 #endif
 
             builder.Services.AddSingleton<WeatherForecastService>();
-
+            builder.Services.AddMasaBlazor();
             return builder.Build();
         }
     }

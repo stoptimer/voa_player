@@ -1,0 +1,18 @@
+﻿@page "/list"
+
+<h3>VOA-List</h3>
+<MList>
+    @for (int i = 0; i < 3; i++)
+    {
+        <MListItem>
+            <a class="nav-link" href="/detail/@i">
+                <MListItemContent>
+                    <MListItemTitle>@i</MListItemTitle>
+                </MListItemContent>
+            </a>
+        </MListItem>
+    }
+</MList>
+@code {
+
+}
